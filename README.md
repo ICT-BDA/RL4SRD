@@ -1,11 +1,14 @@
-# RL4SRD
+# Adapting Markov Decision Process for Search Result Diversification
 
-## Train
-### 训练数据  
-data文件夹中，query_permutation是每个query的相关文档信息，query_representation是每个query的向量表示，document_representation是每个文档的向量表示，query_doc是每个文档所包含的subtopic
+## Training data
+Files in the *data* fold
+query_permutation: documents information related to each query
+query_representation: embeddings of queries 
+document_representation: embeddings of documents 
+query_doc: subtopics covered by each document
 
-### 运行命令
+### Command Line
 python RL4SRD.py query_permutation.json query_representation.dat document_representation.dat query_doc.json folder
 
-### 训练结果
-实验结果存储在folder中
+### Training results
+The results are saved in *folder*
